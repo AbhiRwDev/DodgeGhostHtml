@@ -1,4 +1,7 @@
 # DodgeGhostHtml
+![Screenshot (4)](https://user-images.githubusercontent.com/87018032/235370659-450bf888-6df3-446b-b85e-d7632721bbae.png)
+
+
 A 2d obstacle dodging game using html,css,js
 
 a simple 2 axis 2d game 
