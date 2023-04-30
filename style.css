@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.game {
+    width: 590px;
+    height: 165px;
+    top: 300px;
+    border: 1px solid #000000;
+    background-color: black;
+    animation: colorchange 6s infinite linear;
+    position: fixed;
+    left: 650px;
+}
+#dino {
+    width: 40px;
+    height: 40px;
+    background-image: url(ball.png);
+    background-size: auto 40px;
+    position: fixed;
+    left: 300px;
+
+    
+    
+
+}
+.colorchg
+{
+    animation: colorchange 3s infinite linear;
+}
+#mask
+{
+    background-image: url(mask.png);
+    position: fixed;
+    width: 1920px;
+    height: 1080px;
+    background-size: 1920px 1080px;
+    left: -45.5px;
+    top: -117.5px;
+    z-index: 200;
+
+}
+
+@keyframes jump {
+    0% {
+        top: 143px; /*distance from the top of the parent element*/
+    }
+    100% {
+        top: 70px;
+    }
+}
+#cactus {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 415px;
+    left: 1080px; /*width of frame - width of cactus*/
+    background-image: url(spike.png);
+    background-size: 40px 40px;
+    animation: cactus-block 1.3s infinite linear;
+}
+#cactus1 {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 415px;
+    left: 1080px; /*width of frame - width of cactus*/
+    background-image: url(spike.png);
+    background-size: 40px 40px;
+    animation: cactus-block 1.3s infinite linear;
+}
+.menu
+{
+    line-height: 40px;
+  height: 165px;
+  width: 600px;
+  top: 300px;
+  left: 650px;
+  opacity: 0;
+  color: white;
+  position: fixed;
+  background-color: black;
+  text-align: top center;
+  
+
+  
+
+}
+#Buttons
+{   
+    position: relative;
+   
+   color: black;z-index: 201;background-size: 200px 100px;width: 50px; height: 50px;
+   padding: 0%;
+   margin: 0%;
+   border: solid ;
+   border-width: 2px;
+   border-color: whitesmoke;
+   background-color: darkred;
+   font-family: Roboto;
+   
+   
+  
+}
+
+
+.Splash
+{
+    z-index: 901;
+    animation:  disappear 4s  linear;
+}
+.menutext
+{
+    animation: colorchange 3s  infinite linear;
+}
+
+
+
+@keyframes colorchange
+{
+    0%{
+        background-color: #EDFC1C;
+    }
+    50%
+    {
+        background-color: #F02663;
+    }
+    100%
+    {
+        background-color: #78FA5F;
+    }
+}
+@keyframes cactus-block 
+{
+    0% {
+        left: 1250px;
+    }
+    100% {
+        left: 550px;
+    }
+
+
+}
+
+@keyframes rot
+{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes disappear
+{
+    0%{
+        z-index: 900;
+    }
+    95%
+    {
+        z-index: 900;
+    }
+    100%
+    {
+        z-index: 0;
+    }
+
+}
